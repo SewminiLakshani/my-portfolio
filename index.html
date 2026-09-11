@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sewmini Lakshani — Web Developer Intern</title>
+<meta name="description" content="Portfolio of A.P Sewmini Lakshani, an HNDIT student and aspiring Web Developer Intern.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<!-- style.css loads after Bootstrap so the custom theme always wins on shared classes like .btn -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+        <i class="fa-regular fa-sun sun-icon"></i>
+        <i class="fa-regular fa-moon moon-icon"></i>
+      </button>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-right">
+      <a href="#home" class="logo">sewmini<span class="logo-dot">.</span>dev</a>
+      <a href="https://github.com/SewminiLakshani" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/sewmini-lakshani-1aa691380" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:sewminilakshani1010@gmail.com" class="icon-btn" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-inner row align-items-center g-5">
+    <div class="hero-text reveal col-lg-7">
+      <p class="hero-kicker">Hello, I'm</p>
+      <h1 class="hero-name">A.P Sewmini<br>Lakshani</h1>
+      <p class="hero-role"><span class="caret">&gt;</span> <span id="typedRole"></span><span class="type-cursor">|</span></p>
+      <p class="hero-intro">I'm an HNDIT student passionate about building modern, responsive, and user-focused web applications. I work across frontend, backend, and full-stack development, and I keep sharpening my skills through practical, real-world projects.</p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View my projects</a>
+        <a href="assets/cv/Sewmini-Lakshani-CV.pdf" target="_blank" rel="noopener" class="btn btn-outline">View my CV</a>
+        <a href="assets/cv/Sewmini-Lakshani-CV.pdf" download class="btn btn-ghost"><i class="fa-solid fa-arrow-down-long"></i> Download CV</a>
+      </div>
+
+      <div class="hero-social">
+        <a href="https://github.com/SewminiLakshani" target="_blank" rel="noopener" class="social-link" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/sewmini-lakshani-1aa691380" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:sewminilakshani1010@gmail.com" class="social-link" aria-label="Send an email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-photo reveal col-lg-5">
+      <div class="photo-frame">
+        <img src="assets/images/profile.jpg" alt="A.P Sewmini Lakshani" class="photo-img">
+      </div>
+      <div class="photo-tag">
+        <i class="fa-solid fa-code"></i> Available for internship
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About section"><span></span></a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <div class="section-head">
+      <h2>Who I Am</h2>
+      <p class="section-sub">A quick introduction before the code speaks for itself.</p>
+    </div>
+
+    <div class="about-grid row g-5 align-items-start">
+      <div class="about-copy reveal col-lg-7">
+        <p>I'm currently completing my Higher National Diploma in Information Technology at SLIATE, and web development is where I've chosen to focus my energy. I like taking an idea — a checkout flow, a dashboard, a quiz engine — and building it end to end: structuring the database, writing the backend logic, and shaping an interface people actually enjoy using.</p>
+        <p>Most of what I know comes from building rather than reading about building. Every project below started as a "can I make this work" question, and turned into something with real authentication, real data, and real edge cases to debug.</p>
+      </div>
+
+      <div class="about-cards reveal col-lg-5">
+        <div class="row row-cols-2 g-3">
+          <div class="col-12"><div class="about-card"><i class="fa-solid fa-graduation-cap"></i><span>HNDIT Student</span></div></div>
+          <div class="col"><div class="about-card"><i class="fa-solid fa-laptop-code"></i><span>Web Developer</span></div></div>
+          <div class="col"><div class="about-card"><i class="fa-solid fa-window-maximize"></i><span>Frontend Development</span></div></div>
+          <div class="col"><div class="about-card"><i class="fa-solid fa-server"></i><span>Backend Development</span></div></div>
+          <div class="col"><div class="about-card"><i class="fa-solid fa-layer-group"></i><span>Full-Stack Development</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section-alt" id="skills">
+  <div class="section-inner">
+    <div class="section-head">
+      <h2>Technical Skills</h2>
+      <p class="section-sub">Tools and languages I build with, grouped by where they fit.</p>
+    </div>
+
+    <div class="skills-grid row row-cols-1 row-cols-md-2 g-4">
+      <div class="col"><div class="skill-group reveal">
+        <h3><i class="fa-solid fa-window-maximize"></i> Frontend Development</h3>
+        <div class="chip-row">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Bootstrap</span>
+          <span class="chip">React</span>
+          <span class="chip">Tailwind CSS</span>
+        </div>
+      </div></div>
+
+      <div class="col"><div class="skill-group reveal">
+        <h3><i class="fa-solid fa-server"></i> Backend Development</h3>
+        <div class="chip-row">
+          <span class="chip">PHP</span>
+          <span class="chip">Java</span>
+          <span class="chip">C# (Basic)</span>
+        </div>
+      </div></div>
+
+      <div class="col"><div class="skill-group reveal">
+        <h3><i class="fa-solid fa-database"></i> Database</h3>
+        <div class="chip-row">
+          <span class="chip">SQL</span>
+          <span class="chip">MySQL</span>
+        </div>
+      </div></div>
+
+      <div class="col"><div class="skill-group reveal">
+        <h3><i class="fa-solid fa-code-branch"></i> Tools &amp; Version Control</h3>
+        <div class="chip-row">
+          <span class="chip">Git</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">VS Code</span>
+        </div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="section-inner">
+    <div class="section-head">
+      <h2>Featured Projects</h2>
+      <p class="section-sub">A few systems I designed and built from the ground up.</p>
+    </div>
+
+    <div class="projects-grid row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="projectsGrid"></div>
+
+    <div class="pagination" id="pagination"></div>
+  </div>
+</section>
+
+<!-- Project Modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <p class="modal-type" id="modalType"></p>
+    <h3 id="modalTitle"></h3>
+    <p class="modal-desc" id="modalDesc"></p>
+
+    <h4>Technologies</h4>
+    <div class="chip-row" id="modalTech"></div>
+
+    <h4>Key Features</h4>
+    <ul class="modal-features" id="modalFeatures"></ul>
+
+    <div class="modal-actions">
+      <a href="#" target="_blank" rel="noopener" class="btn btn-primary" id="modalGithub"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+      <button class="btn btn-outline" id="modalCloseBtn">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="section section-alt" id="certifications">
+  <div class="section-inner">
+    <div class="section-head">
+      <h2>Certifications</h2>
+      <p class="section-sub">Courses I've completed alongside my diploma.</p>
+    </div>
+
+    <div class="certs-grid row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="certsGrid"></div>
+
+    <button class="btn btn-outline view-more-btn" id="viewMoreCerts">View more certifications</button>
+  </div>
+</section>
+
+<!-- ============ DEVELOPMENT JOURNEY ============ -->
+<section class="section" id="journey">
+  <div class="section-inner">
+    <div class="section-head">
+      <h2>My Development Journey</h2>
+      <p class="section-sub">How I got from first line of code to internship-ready.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2024</span>
+          <p>Started the Higher National Diploma in Information Technology at SLIATE.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2025</span>
+          <p>Built my first full web and software development projects, including EduLMS and the Java POS system.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2026</span>
+          <p>Completed a set of professional certifications and shipped SmartCart, my most advanced project yet.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot timeline-dot-current"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">Current</span>
+          <p>Seeking a Web Developer Internship to bring these skills into a real engineering team.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section-alt" id="contact">
+  <div class="section-inner">
+    <div class="section-head">
+      <h2>Let's build something together.</h2>
+      <p class="section-sub">I'm interested in learning, building real-world applications, and gaining professional industry experience.</p>
+    </div>
+
+    <div class="contact-grid row g-5">
+      <div class="contact-info reveal col-lg-5">
+        <a href="mailto:sewminilakshani1010@gmail.com" class="contact-row">
+          <i class="fa-regular fa-envelope"></i>
+          <div><span>Email</span><p>sewminilakshani1010@gmail.com</p></div>
+        </a>
+        <a href="https://github.com/SewminiLakshani" target="_blank" rel="noopener" class="contact-row">
+          <i class="fa-brands fa-github"></i>
+          <div><span>GitHub</span><p>github.com/SewminiLakshani</p></div>
+        </a>
+        <a href="https://linkedin.com/in/sewmini-lakshani-1aa691380" target="_blank" rel="noopener" class="contact-row">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <div><span>LinkedIn</span><p>linkedin.com/in/sewmini-lakshani</p></div>
+        </a>
+      </div>
+
+      <form class="contact-form reveal col-lg-7" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name">
+          <span class="form-error" id="nameError"></span>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+          <span class="form-error" id="emailError"></span>
+        </div>
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?">
+          <span class="form-error" id="subjectError"></span>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me a bit more..."></textarea>
+          <span class="form-error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+        <p class="form-success" id="formSuccess">Thanks — your message is ready to send. Opening your email app...</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-name">A.P Sewmini Lakshani</p>
+      <p class="footer-role">Web Developer Intern</p>
+    </div>
+    <div class="footer-social">
+      <a href="https://github.com/SewminiLakshani" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/sewmini-lakshani-1aa691380" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:sewminilakshani1010@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 A.P Sewmini Lakshani. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
