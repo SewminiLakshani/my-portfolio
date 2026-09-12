@@ -19,7 +19,7 @@ const PROJECTS = [
       "Role-based access control & session management",
       "Secure backend with prepared statements"
     ],
-    github: "https://github.com/SewminiLakshani"
+    github: "https://github.com/SewminiLakshani/smart-cart.git"
   },
   {
     id: "edulms",
@@ -38,7 +38,7 @@ const PROJECTS = [
       "MySQLi prepared statements",
       "Password hashing"
     ],
-    github: "https://github.com/SewminiLakshani"
+    github: "https://github.com/SewminiLakshani/lms-project.git"
   },
   {
     id: "javapos",
@@ -57,7 +57,7 @@ const PROJECTS = [
       "CRUD operations",
       "Modular DAO architecture"
     ],
-    github: "https://github.com/SewminiLakshani"
+    github: "https://github.com/SewminiLakshani/POS_System.git"
   }
 ];
 
@@ -71,7 +71,6 @@ const CERTIFICATIONS = [
   { title: "Critical Thinking in the AI Era", org: "HP LIFE", year: "2026", link: "assets/images/certificates/critical-thinking-ai-era.pdf" },
   { title: "HTML Essentials", org: "Cisco Networking Academy", year: "2026", link: "assets/images/certificates/html-essentials.pdf" },
   { title: "Introduction to Database Concepts", org: "Alison", year: "2026", link: "assets/images/certificates/intro-to-database-concepts.pdf" },
-  { title: "Introduction to Information Technology and AWS Cloud", org: "Coursera", year: "2026", link: "assets/cv/Sewmini-Lakshani-CV.pdf" },
   { title: "CSS & Responsive Web Design", org: "DP Education IT Campus", year: "2026", link: "assets/images/certificates/dp-education-css.pdf" }
 ];
 
