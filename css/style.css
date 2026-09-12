@@ -101,23 +101,30 @@ input, textarea{ font-family: inherit; }
 .navbar{
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   height: var(--nav-h);
-  background: rgba(11,14,19,0.72);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--border-soft);
-  transition: background .35s ease, border-color .35s ease;
+  background: transparent;
+  transition: background .35s ease;
 }
-html[data-theme="light"] .navbar{ background: rgba(250,249,247,0.78); }
 
 .nav-inner{
   max-width: 1160px; margin: 0 auto; padding: 0 32px; height: 100%;
-  display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 24px;
+  display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 16px;
 }
-.nav-left{ display: flex; align-items: center; }
+
+.nav-box{
+  background: rgba(21,26,34,0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-soft);
+  border-radius: 999px;
+  transition: background .35s ease, border-color .35s ease;
+}
+html[data-theme="light"] .nav-box{ background: rgba(255,255,255,0.82); }
+
+.nav-left{ padding: 10px 22px; display: flex; align-items: center; }
 .logo{ font-family: var(--font-mono); font-size: 1.05rem; font-weight: 500; letter-spacing: -0.02em; }
 .logo-dot{ color: var(--accent); }
 
-.nav-links{ display: flex; gap: 34px; justify-self: center; }
+.nav-links{ display: flex; gap: 30px; justify-self: center; padding: 13px 30px; }
 .nav-link{ font-size: .93rem; color: var(--text-dim); position: relative; padding: 6px 0; transition: color .2s ease; }
 .nav-link:hover{ color: var(--text); }
 .nav-link::after{
@@ -126,8 +133,7 @@ html[data-theme="light"] .navbar{ background: rgba(250,249,247,0.78); }
 }
 .nav-link:hover::after{ width: 100%; }
 
-.nav-right{ display: flex; align-items: center; gap: 6px; justify-self: end; }
-.nav-right .logo{ margin-right: 10px; }
+.nav-right{ display: flex; align-items: center; gap: 2px; justify-self: end; padding: 6px; }
 .icon-btn{
   width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
   border-radius: var(--radius-sm); color: var(--text-dim); font-size: .95rem;
@@ -416,6 +422,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     background: var(--bg); flex-direction: column; align-items: flex-start; gap: 0;
     padding: 12px 32px 32px; transform: translateY(-8px); opacity: 0; pointer-events: none;
     transition: opacity .25s ease, transform .25s ease; overflow-y: auto;
+    border-radius: 0; border: none; backdrop-filter: none;
   }
   .nav-links.active{ transform: translateY(0); opacity: 1; pointer-events: auto; }
   .nav-link{ width: 100%; padding: 16px 0; border-bottom: 1px solid var(--border-soft); }
