@@ -7,6 +7,7 @@ const PROJECTS = [
     name: "SmartCart",
     type: "E-Commerce Management System",
     icon: "fa-solid fa-cart-shopping",
+    image: "assets/images/projects/smartcart.png",
     shortDesc: "A multi-role online store with dynamic checkout, stock alerts, and sales analytics.",
     fullDesc: "SmartCart is a responsive e-commerce management system with separate Customer, Admin, and Staff roles. It handles dynamic checkout, automated low-stock detection, and sales reporting through a secure, session-based PHP backend.",
     tech: ["HTML5", "CSS3", "Bootstrap 5", "JavaScript", "PHP", "MySQL", "AJAX", "Chart.js"],
@@ -25,6 +26,7 @@ const PROJECTS = [
     name: "EduLMS",
     type: "Learning Management System",
     icon: "fa-solid fa-graduation-cap",
+    image: "assets/images/projects/lms.png",
     shortDesc: "A role-based LMS with course enrollment, resource sharing, and timed MCQ quizzes.",
     fullDesc: "EduLMS gives Admins, Lecturers, and Students their own dashboards. Students enroll in courses, access shared resources, and sit timed MCQ quizzes that are evaluated automatically.",
     tech: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
@@ -43,6 +45,7 @@ const PROJECTS = [
     name: "Java POS",
     type: "Desktop Point of Sale Application",
     icon: "fa-solid fa-cash-register",
+    image: "assets/images/projects/javapos.png",
     shortDesc: "A desktop POS system for real-time checkout, stock, and return processing.",
     fullDesc: "A Java Swing desktop application built for real-time checkout, stock management, and return processing, with a modular DAO-based backend for clean database transactions.",
     tech: ["Java", "Swing", "MySQL", "JDBC", "DAO Pattern"],
@@ -57,7 +60,6 @@ const PROJECTS = [
     github: "https://github.com/SewminiLakshani"
   }
 ];
-
 
 const CERTIFICATIONS = [
   { title: "Web Design for Beginners", org: "University of Moratuwa (CODL)", year: "2026", link: "assets/images/certificates/web-design-for-beginners.pdf" },
@@ -121,10 +123,14 @@ const CERTS_INITIAL = 6;
 let currentPage = 1;
 
 function renderProjectCard(project){
+  const thumb = project.image
+    ? `<img src="${project.image}" alt="${project.name} screenshot" class="project-thumb-img">`
+    : `<i class="${project.icon}"></i>`;
+
   return `
     <div class="col">
       <div class="project-card h-100" data-id="${project.id}">
-        <div class="project-thumb"><i class="${project.icon}"></i></div>
+        <div class="project-thumb">${thumb}</div>
         <div class="project-body">
           <h3>${project.name}</h3>
           <p class="project-type">${project.type}</p>
