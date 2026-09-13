@@ -1,6 +1,5 @@
-// =============================================================
 // DATA
-// =============================================================
+
 const PROJECTS = [
   {
     id: "smartcart",
@@ -77,9 +76,9 @@ const CERTIFICATIONS = [
 const PROJECTS_PER_PAGE = 3;
 const CERTS_INITIAL = 6;
 
-// =============================================================
-// THEME TOGGLE
-// =============================================================
+
+// theame toggle
+
 (function initTheme(){
   const root = document.documentElement;
   const saved = localStorage.getItem("theme");
@@ -94,9 +93,9 @@ const CERTS_INITIAL = 6;
   });
 })();
 
-// =============================================================
-// MOBILE NAV
-// =============================================================
+
+// mobile nav
+
 (function initMobileNav(){
   const hamburger = document.getElementById("hamburger");
   const navLinks = document.getElementById("navLinks");
@@ -116,9 +115,9 @@ const CERTS_INITIAL = 6;
   });
 })();
 
-// =============================================================
-// PROJECTS: RENDER + PAGINATION
-// =============================================================
+
+//progect->render, pagination
+
 let currentPage = 1;
 
 function renderProjectCard(project){
@@ -186,7 +185,7 @@ function renderPagination(totalPages){
 }
 
 
-// PROJECT MODAL
+// Project model
 
 const modalOverlay = document.getElementById("modalOverlay");
 
@@ -220,7 +219,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 
-// CERTIFICATIONS: RENDER + VIEW MORE
+// Certification: rendre viwe more
 
 function renderCertCard(cert, index){
   return `
@@ -253,7 +252,7 @@ function initCertifications(){
 }
 
 
-// SCROLL REVEAL
+// scroll reveal
 
 function initScrollReveal(){
   const items = document.querySelectorAll(".reveal");
@@ -270,7 +269,7 @@ function initScrollReveal(){
 }
 
 
-// CONTACT FORM VALIDATION
+// Contact form validation
 
 function initContactForm(){
   const form = document.getElementById("contactForm");
@@ -323,9 +322,9 @@ function initContactForm(){
   });
 }
 
-// =============================================================
-// HERO ROLE TYPEWRITER
-// =============================================================
+
+// hero role typewriter
+
 const ROLES = [
   "Web Developer Intern",
   "Software Developer Intern",
@@ -381,9 +380,9 @@ function initRoleTypewriter(){
   tick();
 }
 
-// =============================================================
+
 // INIT
-// =============================================================
+
 document.addEventListener("DOMContentLoaded", () => {
   renderProjectsPage(1);
   initCertifications();
