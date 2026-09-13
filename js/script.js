@@ -185,9 +185,9 @@ function renderPagination(totalPages){
   if (next) next.addEventListener("click", () => renderProjectsPage(currentPage + 1));
 }
 
-// =============================================================
+
 // PROJECT MODAL
-// =============================================================
+
 const modalOverlay = document.getElementById("modalOverlay");
 
 function openProjectModal(id){
@@ -219,9 +219,9 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && modalOverlay.classList.contains("active")) closeProjectModal();
 });
 
-// =============================================================
+
 // CERTIFICATIONS: RENDER + VIEW MORE
-// =============================================================
+
 function renderCertCard(cert, index){
   return `
     <div class="col cert-col ${index >= CERTS_INITIAL ? "hidden-cert" : ""}">
@@ -252,9 +252,9 @@ function initCertifications(){
   });
 }
 
-// =============================================================
+
 // SCROLL REVEAL
-// =============================================================
+
 function initScrollReveal(){
   const items = document.querySelectorAll(".reveal");
   const observer = new IntersectionObserver((entries) => {
@@ -269,9 +269,9 @@ function initScrollReveal(){
   items.forEach(item => observer.observe(item));
 }
 
-// =============================================================
+
 // CONTACT FORM VALIDATION
-// =============================================================
+
 function initContactForm(){
   const form = document.getElementById("contactForm");
   const successMsg = document.getElementById("formSuccess");
